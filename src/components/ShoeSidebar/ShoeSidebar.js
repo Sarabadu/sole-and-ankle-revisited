@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS, WEIGHTS } from '../../constants';
+import { COLORS, QUERIES } from "../../constants";
 
 const Sidebar = () => {
   return (
@@ -23,13 +23,17 @@ const Sidebar = () => {
   );
 };
 
-const Wrapper = styled.aside``;
+const Wrapper = styled.aside`
+  @media ${QUERIES.tabletAndDown} {
+    display: none;
+  }
+`;
 
 const Link = styled.a`
   display: block;
   text-decoration: none;
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.gray[900]};
+  font-weight: var(--weight-medium);
+  color: var(--color-gray-900);
   line-height: 2;
 `;
 
