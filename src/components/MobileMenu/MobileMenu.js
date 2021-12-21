@@ -51,8 +51,9 @@ const Overlay = styled(DialogOverlay)`
 const Content = styled(DialogContent)`
   /* position: relative; */
   padding: ${32 / 16}rem;
-  padding-top: ${24 / 16}rem;
-  padding-right: ${16 / 16}rem;
+  padding-top: ${16 / 16}rem;
+  /* padding-right: ${16 / 16}rem; */
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -63,12 +64,13 @@ const Content = styled(DialogContent)`
 
 const CloseBtn = styled(UnstyledButton)`
   align-self: flex-end;
+  padding: 16px;
 `;
 
 const Nav = styled.nav`
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 16px;
 
   & > a {
     text-decoration: none;

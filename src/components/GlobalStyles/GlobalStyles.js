@@ -72,6 +72,19 @@ html {
     Silence the warning about missing Reach Dialog styles
   */
   --reach-dialog: 1;
+  --color-backdrop: 
+  --color-gray-100:${COLORS.gray[100]};
+--color-gray-300:${COLORS.gray[300]};
+--color-gray-500:${COLORS.gray[500]};
+--color-gray-700:${COLORS.gray[700]};
+--color-gray-900:${COLORS.gray[900]};
+--color-primary:${COLORS.primary};
+--color-secondary:${COLORS.secondary};
+--color-white:${COLORS.white};
+
+--weight-bold: ${WEIGHTS.bold};
+--weight-medium: ${WEIGHTS.medium};
+--weight-normal: ${WEIGHTS.normal};
 }
 
 html, body, #root {
@@ -79,18 +92,7 @@ html, body, #root {
 }
 
 
---color-gray-100:${COLORS.gray[100]}
---color-gray-300:${COLORS.gray[300]}
---color-gray-500:${COLORS.gray[500]}
---color-gray-700:${COLORS.gray[700]}
---color-gray-900:${COLORS.gray[900]}
---color-primary:${COLORS.primary}
---color-secondary:${COLORS.secondary}
---color-white:${COLORS.white}
 
---weight-bold: ${WEIGHTS.bold}
---weight-medium: ${WEIGHTS.medium}
---weight-normal: ${WEIGHTS.normal}
 
 `;
 

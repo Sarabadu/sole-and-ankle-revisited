@@ -32,12 +32,11 @@ const Header = () => {
           <NavLink href="/collections">Collections</NavLink>
           <NavLink href="/collections">Collections</NavLink>
           <NavLink href="/collections">Collections</NavLink>
-          <NavLink href="/collections">Collections</NavLink>
         </Nav>
         <MobileBtns>
-          <UnstyledButton>
+          <ShoppingBag>
             <Icon id="shopping-bag" strokeWidth={2} />
-          </UnstyledButton>
+          </ShoppingBag>
           <UnstyledButton>
             <Icon id="search" strokeWidth={2} />
           </UnstyledButton>
@@ -59,8 +58,21 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
+  /* height: 72px; */
   border-bottom: 1px solid var(--color-gray-300);
+
+  overflow-x: auto;
+  @media ${QUERIES.tabletAndDown} {
+    align-items: center;
+  }
+  @media ${QUERIES.phoneAndDown} {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+`;
+
+const ShoppingBag = styled(UnstyledButton)`
+  transform: translateX(-2px);
 `;
 
 const Nav = styled.nav`
@@ -70,7 +82,6 @@ const Nav = styled.nav`
   @media ${QUERIES.tabletAndDown} {
     display: none;
   }
-  /* overflow-x: auto; */
 `;
 
 const Side = styled.div`
